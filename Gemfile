@@ -35,3 +35,5 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 gem 'debugger'
+
+gem "bcrypt-ruby", :require => "bcrypt"

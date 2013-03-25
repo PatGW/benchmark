@@ -8,7 +8,7 @@ class UsersControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "test that passwords match" do
+  test "passwords match" do
     post :create, {:user => {:name => "Patrick", :email => "me@there.com", :password => "blah", :password_confirmation => "blahblah"}}
     assert_template :new
     assert User.count == 0
