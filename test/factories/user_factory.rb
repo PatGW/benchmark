@@ -21,4 +21,11 @@ class UserFactory
     user
   end
 
+  def self.user_with
+    user = User.new
+    user.email = "someone@somwhere.com"
+    user.password = "blah"
+    user
+  end
+
 end
