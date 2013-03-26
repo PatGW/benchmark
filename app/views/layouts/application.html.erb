@@ -11,7 +11,14 @@
   <header>
     <h1 id="logo">Benchmark</h1>
     <% if session[:user_id] %>
-      <%= link_to "log out", session_path, :confirm => 'Are you sure?', :method => :delete %>
+    <nav>
+      <ul>
+      <li><%= link_to "Add a bench", new_bench_path %></li>
+      <li><%= link_to "Add a location", new_location_path %></li>
+      <li><%= link_to "Back to benches", benches_path %></li>
+      <li><%= link_to "Log out", session_path, :confirm => 'Are you sure?', :method => :delete %></li>
+    </ul>
+  </nav>
     <% else %>
       <%= link_to "sign up", new_user_path %>
       <%= link_to "log in", new_session_path %>
