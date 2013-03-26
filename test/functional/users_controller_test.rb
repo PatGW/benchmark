@@ -20,5 +20,4 @@ class UsersControllerTest < ActionController::TestCase
     assert User.count == 1
   end
 
-
 end

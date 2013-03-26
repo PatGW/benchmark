@@ -1,9 +1,10 @@
 Benchmark::Application.routes.draw do
 
+  root :to => 'benches#index'
+
   resources :users
   resources :benches
-
-  root :to => 'benches#index'
+  resource :session
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -11,3 +11,40 @@
  *= require_self
  *= require_tree .
  */
+
+@import url("normalize.css");
+
+body { background-image: url('/assets/bkgd.gif'); }
+
+#wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+footer {
+  border-top: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+h1 { font-weight: normal; }
+
+form {  overflow: hidden; }
+
+form div {
+  padding: 5px 0;
+  overflow: hidden;
+}
+
+form label, input { float: left; }
+
+form label { width: 170px; text-align: right; margin-right: 20px; margin-top: 4px;}
+
+input { border: none; padding: 3px;}
+
+
+

@@ -1,6 +1,7 @@
 class UserFactory
 
   def self.user_without_name
+    # User.create!(:email => '', :password => "")
     user = User.new
     user.email = "someone@somwhere.com"
     user.password = "blah"
@@ -21,10 +22,11 @@ class UserFactory
     user
   end
 
-  def self.user_with
+  def self.user
     user = User.new
     user.email = "someone@somwhere.com"
     user.password = "blah"
+    user.name = "Patrick"
     user
   end
 
