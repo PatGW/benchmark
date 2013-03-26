@@ -6,8 +6,4 @@ class BenchesControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "user can add a bench" do
-
-  end
-
 end
