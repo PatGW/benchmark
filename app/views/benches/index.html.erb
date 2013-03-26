@@ -2,4 +2,8 @@
 <% if flash[:notice] %>
   <h2><%= flash[:notice] %></h2>
 <% end %>
-
+<ul>
+<% @benches.each do |bench| %>
+  <li><%= bench.location.try(:name) %></li>
+<% end %>
+</ul>

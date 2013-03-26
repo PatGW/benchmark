@@ -44,7 +44,7 @@ form label, input { float: left; }
 
 form label { width: 170px; text-align: right; margin-right: 20px; margin-top: 4px;}
 
-input { border: none; padding: 3px;}
+input, textarea { border: none; padding: 3px;}
 
 
 
