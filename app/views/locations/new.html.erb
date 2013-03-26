@@ -1,0 +1,14 @@
+<h1>Create a location </h1>
+
+<%= form_for @location do |f| %>
+  <div>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  </div>
+  <div>
+  <%= f.label :details %>
+  <%= f.text_area :details %>
+  </div>
+
+  <%= f.submit %>
+<% end %>

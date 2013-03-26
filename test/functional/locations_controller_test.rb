@@ -2,6 +2,11 @@ require 'test_helper'
 
 class LocationsControllerTest < ActionController::TestCase
 
+  test "should show all locations" do
+    get :index
+    assert_response :success
+  end
+
   test "should get new" do
     get :new
     assert_response :success
