@@ -1,6 +1,6 @@
 <h1>Create a Bench </h1>
 
-<%= form_for @bench do |f| %>
+<%= form_for @bench, :html => {:multipart => true} do |f| %>
 
   <%= f.select :location_id, @locations.map{|l| [l.name, l.id]} %>
   <div>

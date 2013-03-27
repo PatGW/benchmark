@@ -1,12 +1,17 @@
 class BenchesController < ApplicationController
 
-  def new
-    @bench = Bench.new
-    @locations = Location.all
-  end
 
   def index
     @benches = Bench.all
+  end
+
+  def show
+    @bench = Bench.find(params[:id])
+  end
+
+  def new
+    @bench = Bench.new
+    @locations = Location.all
   end
 
   def create

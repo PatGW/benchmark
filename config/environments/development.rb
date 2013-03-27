@@ -47,6 +47,6 @@ Benchmark::Application.configure do
       :secret_access_key => ENV['S3_ACCESS_KEY']
     }
   }
+
+
 end
-
-

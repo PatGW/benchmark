@@ -4,6 +4,6 @@
 <% end %>
 <ul>
 <% @benches.each do |bench| %>
-  <li><%= bench.location.try(:name) %></li>
+  <li><%= link_to bench.location.try(:name), bench_path(bench) %></li>
 <% end %>
 </ul>

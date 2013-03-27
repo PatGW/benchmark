@@ -14,10 +14,15 @@ class BenchesControllerTest < ActionController::TestCase
 
   test "can add a bench" do
     assert_equal 0, Bench.count
-    bench = BenchFactory.bench
-    post :create, {:location_id => bench.location_id, :description => bench.description, :image => bench.image}
+    post :create, {:location_id => 1, :description => "some description" }
     assert_equal 1, Bench.count
-    assert_redirected_to benches_path
+    bench = assigns(:bench) # references @bench from the controller's action
+    assert_redirected_to bench_path(bench)
   end
 
+  test "should get show" do
+    bench = assigns(:bench)
+    get :show, {:id => bench.id }
+    assert_response :success
+  end
 end
