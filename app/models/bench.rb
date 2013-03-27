@@ -1,5 +1,5 @@
 class Bench < ActiveRecord::Base
-  attr_accessible :description, :image, :location_id
+  attr_accessible :description, :image, :location_id, :image_file_name
 
   has_attached_file :image, styles: {
     thumb: '100x100>',
