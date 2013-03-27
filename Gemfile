@@ -5,6 +5,8 @@ gem 'rails', '3.2.13'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+gem 'aws-sdk', '~> 1.6.0'
+gem 'paperclip', '~> 3.4.0'
 gem 'pg'
 
 
